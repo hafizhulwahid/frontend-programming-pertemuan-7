@@ -30,6 +30,25 @@ function AddMovieForm(props) {
     };
   }
 
+  const options = [
+    {
+      label: "Action",
+      value: "action",
+    },
+    {
+      label: "Drama",
+      value: "drama",
+    },
+    {
+      label: "Horror",
+      value: "horror",
+    },
+    {
+      label: "Comedy",
+      value: "comedy",
+    },
+  ];
+
     return (
     <div className={styles.container}>
       <section className={styles.form}>
@@ -48,6 +67,14 @@ function AddMovieForm(props) {
             {isTitleError ? <p></p> : "" } <br />
             <label className={styles.form__label} for="year">Year</label><br />
             <input className={styles.form__input} type="text" id="date" value={date} onChange={handleInputDate} /><br /><br />
+            <label className={styles.form__label} for="link">Link Gambar</label><br />
+            <input className={styles.form__input} type="text" id="date" value={date} onChange={handleInputDate} /><br /><br />
+            <label className={styles.form__label} for="link">Type Movie</label><br />
+            <select className={styles.form__select} >
+            {options.map((option) => (
+              <option value={option.value}>{option.label}</option>
+            ))}
+            </select><br /><br />
             <button className={styles.form__button} >Submit</button>
           </form>
         </div>

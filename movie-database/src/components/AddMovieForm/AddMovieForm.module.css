@@ -33,6 +33,15 @@
     border-radius: 10px;
     width: 280px;
   }
+
+  .form__select {
+    border-color: #4361ee;
+    margin-top: 4px;
+    margin-bottom: 1rem;
+    font-size: 1.59rem;
+    border-radius: 10px;
+    width: 280px;
+  }
   
   .form__button {
     padding: 0.8rem 2rem;
