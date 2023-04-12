@@ -1,0 +1,84 @@
+/* Small Screen */
+.container {
+    margin: 1rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .form__left {
+    margin-bottom: 1rem;
+  }
+  
+  .form__title {
+    color: #4361ee;
+    margin-bottom: 1rem;
+    font-size: 2.44rem;
+  }
+  
+  .form__label {
+    color: #555555;
+    margin-bottom: 1rem;
+    font-size: 1.59rem;
+    border-radius: 10px;
+  }
+
+  .form__input {
+    border-color: #4361ee;
+    margin-bottom: 1rem;
+    font-size: 1.59rem;
+    border-radius: 10px;
+    width: 280px;
+  }
+  
+  .form__button {
+    padding: 0.8rem 2rem;
+    width: 280px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4361ee;
+    color: #fff;
+  }
+  
+  .form__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+  
+  /* Medium Screen */
+  @media (min-width: 768px) {
+    /*
+     * Nothing TODO Here.
+     * We dont change style form. 
+     */
+  }
+  
+  /* Large Screen */
+  @media (min-width: 992px) {
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+    }
+  
+    .form {
+      margin: 0 1rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .form__left {
+      flex-basis: 50%;
+      margin: 1rem;
+    }
+  
+    .form__right {
+      flex-basis: 50%;
+    }
+  }
+  
