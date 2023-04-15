@@ -68,10 +68,10 @@ function AddMovieForm(props) {
         poster : pict,
       };
 
-      // setMovies([...movies, movie]);
+      setMovies([...movies, movie]);
       setIsTitleError(false);
       setIsDateError(false);
-      console.log(movie);
+      // console.log(movie);
     }
 
     // console.log(movie);
