@@ -5,14 +5,13 @@ import { useState } from "react";
 import { nanoid } from "nanoid";
 
 
-function Movies() {
+function Movies(props) {
   // const movies =data;
 
-  // Buat state movies
-  const [movies, setMovies]= useState(data);
+  const { movies, setMovies } = props;
 
   function handleClik() {
-    const newFilm = {
+    const movie = {
       // id: "xyz",
       id: nanoid(),
       title: "Jigsaw",
@@ -20,10 +19,10 @@ function Movies() {
       type: "movie",
       poster: "https://picsum.photos/300/400"
     };
-    // movies.push(newFilm);
+    // movies.push(movie);
     // console.log(movies);
 
-    setMovies([...movies, newFilm]);
+    setMovies([...movies, movie]);
   }
 
   return (
